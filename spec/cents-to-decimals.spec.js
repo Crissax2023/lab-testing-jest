@@ -2,6 +2,7 @@
 FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc):
 https://jestjs.io/docs/using-matchers
 */
+const centsToDecimals = required('../src/cents-to-decimals')
 
 describe('centsToDecimals function', () => {
   // Describes the suite / group of tests
@@ -11,7 +12,7 @@ describe('centsToDecimals function', () => {
   it('should returns undefined when parameter passed is a string.', () => {
     // console.log(centsToDecimals('abcdef') === undefined);
 
-    // expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    //expect(Function_To_Test(parameter)).toEqual(Expected_Result);
     expect(centsToDecimals('abcdef')).toEqual(undefined);
   });
 
